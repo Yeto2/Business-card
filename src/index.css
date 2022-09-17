@@ -1,13 +1,97 @@
-body {
+body ,h3 , h4 {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* start info section */
+
+div#root {
+  height: 100vh;
+  background: #322f2f;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.info h3{
+  padding: 10px 0px 5px;
+}
+.info p {
+  margin: 0px 0px 6px;
+}
+.App {
+  width: 300px;
+  background: #2c2c2c;
+  color: white;
+  margin: 0;
+  height: fit-content;
+  border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+img.avatar {
+  border-top-right-radius: 11px;
+  border-top-left-radius: 11px;
+  width: 300px;
+}
+.about, .interests {
+  max-width: 245px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px auto;
+  padding: 0px;
+}
+.about p, .interests p {
+  margin: 4px 0px 20px;
+  color: #c5c5c5;
+  font-size: 14px;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 7px 0px 25px;
+}
+.btns button {
+  width: 100px;
+  padding: 7px;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button.email {
+    background-color: #fdfbfb;
+}
+button.linkdin {
+  background-color: #1a65d7;
+  color: white;
+}
+button i{
+    padding-right: 7px;
+    font-size:14px;
+}
+.footer {
+  background: #282828;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+  border-end-start-radius: 11px;
+  border-end-end-radius: 11px;
+}
+.footer i {
+  cursor: pointer;
+  color: #dbdbdb;
 }
